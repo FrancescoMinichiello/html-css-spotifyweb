@@ -19,10 +19,6 @@ h1 {
     color: white;
 }
 
-button:hover {
-    cursor: pointer;
-    scale: 1.1;
-}
 
 img {
     display: block;
@@ -42,6 +38,10 @@ h2 {
     color: white;
     margin-top: 80px;
     font-size: 2rem;
+}
+
+a:hover {
+    color: white;
 }
 
 /*Utils*/
@@ -74,6 +74,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+.mg-bottom-s {
+    margin-bottom: 20px;
+}
+
 /*Header*/
 
 .box-header {
@@ -88,7 +92,10 @@ h2 {
     left: 0;
     right: 0;
     margin-right: 16px;
+    z-index: 1;
 }
+
+/*Button*/
 
 button {
     border: 1px solid white;
@@ -98,6 +105,11 @@ button {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 30px;
     padding: 15px 50px;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
 }
 
 /*Main*/
@@ -120,7 +132,7 @@ nav {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-bar {
@@ -132,7 +144,7 @@ nav {
     color: white;
     width: 50px;
     height: calc(100vh - 100px);
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .icon-navbar {
@@ -153,15 +165,28 @@ nav {
 
 .create-playlist {
     cursor: pointer;
-    margin-top: 30px;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: aliceblue;
-    color: lightgray;
+    color: rgb(129, 129, 129);
+}
+
+.personal-playlist {
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.new-playlist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15
 }
 
 /*Lista categorie*/
@@ -186,7 +211,7 @@ nav {
 .active::after {
     content: "";
     position: absolute;
-    left: 35%;
+    left: 30%;
     bottom: -5px;
     width: 40%;
     height: 4px;
@@ -211,10 +236,45 @@ nav {
     margin-bottom: 100px;
     text-align: center;
     font-size: 15px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
+.card::before img {
+    display: block;
+}
 
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
 
+.card:hover::before {
+    opacity: 1;
+}
+
+.card i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover i {
+    opacity: 1;
+}
 
 /*Footer*/
 
@@ -343,16 +403,13 @@ footer {
     .turn-sound {
         width: 20px;
     }
-
-
-
 }
 
 
 @media screen and (min-width: 687px) {
     .nav-bar {
         width: 250px;
-        padding-right: 90px;
+        padding-right: 80px;
     }
 
     main {
@@ -361,7 +418,6 @@ footer {
 
     .ds-none {
         display: inline;
-        margin-left: 10px;
     }
 
     #logo-small {
