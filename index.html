@@ -25,23 +25,46 @@
             <div class="nav-bar">
                 <div class="icon-navbar">
                     <div>
-                        <a href="#"><img src="img/logo-small.svg" alt="logo" id="logo-small"></a>
+                        <a href="#">
+                            <img src="img/logo-small.svg" alt="logo" id="logo-small">
+                        </a>
                         <a href="#">
                             <img src="img/logo.svg" alt="logo" class="ds-none" id="logo-xl">
                         </a>
                     </div>
-                    <div><a href="#"><i class="fa-solid fa-house small-font-size"></i><span
-                                class="ds-none">Home</span></a></div>
-                    <div><a href="#"><i class="fa-solid fa-magnifying-glass small-font-size"></i><span
-                                class="ds-none">Cerca</span></a></div>
-                    <div><a href="#"><i class="fa-solid fa-book-open small-font-size"></i><span class="ds-none">La
-                                tua libreria</span></a></div>
+                    <div>
+                        <a href="#"><i class="fa-solid fa-house small-font-size"></i>
+                            <span class="ds-none">Home</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass small-font-size"></i>
+                            <span class="ds-none">Cerca</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-solid fa-book-open small-font-size"></i>
+                            <span class="ds-none">La tua libreria</span>
+                        </a>
+                    </div>
+
+                    <!--Crea playlist-->
+                    <div class="ds-none">
+                        <h3>PLAYLIST</h3>
+                        <div class="create-playlist"><i class="fa-solid fa-plus"></i></div>
+                    </div>
                 </div>
                 <div class="icon-navbar">
-                    <div><a href="#"><i class="fa-regular fa-circle-down"></i><span class="ds-none">Installa
-                                app</span></a></div>
-                    <div><a href="#"><i class="fa-solid fa-circle-user small-font-size"></i><span
-                                class="ds-none">Francesco M.</span></a></div>
+                    <div>
+                        <a href="#"><i class="fa-regular fa-circle-down"></i>
+                            <span class="ds-none">Installa app</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-solid fa-circle-user small-font-size"></i>
+                            <span class="ds-none">Francesco M.</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -49,9 +72,10 @@
             <div class="box-header">
                 <button>Effettua L'upgrade</button>
             </div>
+            <!--lista categorie-->
             <div class="category-list">
                 <ul class="category">
-                    <li><a href="#">In evidenza</a></li>
+                    <li><a href="#" class="active">In evidenza</a></li>
                     <li><a href="#">Podcast</a></li>
                     <li><a href="#">Classifiche</a></li>
                     <li><a href="#">Generi e mood</a></li>
@@ -160,6 +184,7 @@
     </main>
     <!--Footer-->
     <footer>
+        <!--Footer left-->
         <div class="ft-left">
             <div class="scale"><img src="img/sinister.jpeg" alt="" class="ft-img"></div>
             <div class="mg-right-xs">
@@ -173,6 +198,7 @@
                 <div class="scale"><i class="fa-regular fa-folder"></i></div>
             </div>
         </div>
+        <!--Footer center-->
         <div class="ft-center">
             <div class="track">
                 <span class="scale"><i class="fa-solid fa-shuffle small-font-size"></i></span>
@@ -188,8 +214,18 @@
                 </div><span>4:35</span>
             </div>
         </div>
+        <!--Footer right-->
         <div class="ft-right">
-
+            <div class="sound-bar">
+                <div>
+                    <i class="fa-solid fa-bars mg-right-xs scale"></i>
+                    <i class="fa-solid fa-desktop mg-right-xs scale"></i>
+                    <i class="fa-solid fa-volume-high scale"></i>
+                </div>
+                <div class="sound">
+                    <div class="turn-sound"></div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

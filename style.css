@@ -95,7 +95,7 @@ button {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 30px;
     padding: 15px 50px;
 }
@@ -149,6 +149,23 @@ nav {
     width: 30px;
 }
 
+/*Crea playlist*/
+
+.create-playlist {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    color: lightgray;
+}
+
+/*Lista categorie*/
+
 .category-list {
     margin-top: 100px;
 }
@@ -160,6 +177,22 @@ nav {
     flex-wrap: wrap;
     text-transform: uppercase;
     margin-bottom: 50px;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    left: 35%;
+    bottom: -5px;
+    width: 40%;
+    height: 4px;
+    background-color: #B0FA30;
+    border-radius: 3px;
+
 }
 
 /*Brani musicali*/
@@ -214,6 +247,12 @@ footer {
 }
 
 /*---------Footer center----------*/
+.ft-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .track {
     display: flex;
     gap: 30px;
@@ -246,12 +285,71 @@ footer {
 
 /*----------Footer right---------*/
 
+.sound-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
 
+.sound {
+    height: 10px;
+    width: 150px;
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+}
+
+.turn-sound {
+    width: 70px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
 
 
 /*-------------Media queries-------------*/
 
-@media screen and (min-width: 560px) {
+@media screen and (max-width: 500px) {
+    footer {
+        padding: 5px;
+    }
+
+    .ft-img {
+        width: 30px;
+    }
+
+    .ft-right {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 686px) {
+    footer {
+        padding: 5px;
+    }
+
+    .ft-img {
+        width: 30px;
+    }
+
+    .sound-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sound {
+        width: 50px;
+    }
+
+    .turn-sound {
+        width: 20px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 687px) {
     .nav-bar {
         width: 250px;
         padding-right: 90px;
@@ -287,4 +385,15 @@ footer {
     .track {
         justify-content: center;
     }
+
+    .ft-center {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .ft-center {
+        margin-left: 80px;
+    }
+
 }
