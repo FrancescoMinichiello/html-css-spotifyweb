@@ -24,6 +24,26 @@ button:hover {
     scale: 1.1;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+h3 {
+    color: white;
+    margin-top: 20px;
+}
+
+address {
+    color: lightgray;
+}
+
+h2 {
+    color: white;
+    margin-top: 80px;
+    font-size: 2rem;
+}
+
 /*Utils*/
 
 .small-font-size {
@@ -32,6 +52,10 @@ button:hover {
 
 .ds-none {
     display: none;
+}
+
+.circle-border {
+    border-radius: 50%;
 }
 
 /*Header*/
@@ -48,6 +72,16 @@ button:hover {
     left: 0;
     right: 0;
     margin-right: 16px;
+}
+
+button {
+    border: 1px solid white;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 15px 50px;
 }
 
 /*Main*/
@@ -122,22 +156,13 @@ nav {
     margin-top: 30px;
 }
 
-.col {
-    border: 2px solid red;
-}
-
 .card {
-    width: 250px;
-    height: 250px;
-    border: 1px solid white;
-    background-color: purple;
+    width: 210px;
+    height: 210px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 15px;
 }
-
-
-
-
-
-
 
 
 
@@ -172,4 +197,11 @@ footer {
         margin-left: 10px;
     }
 
+    #logo-small {
+        display: none;
+    }
+
+    #logo-xl {
+        margin-left: -1px;
+    }
 }
