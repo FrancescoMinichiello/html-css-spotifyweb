@@ -2,4 +2,174 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Generics*/
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+/*Utils*/
+
+.small-font-size {
+    font-size: 26px;
+}
+
+.ds-none {
+    display: none;
+}
+
+/*Header*/
+
+.box-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.342);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-right: 16px;
+}
+
+/*Main*/
+
+main {
+    background-color: #141922;
+    margin-left: 50px;
+}
+
+
+.container {
+    overflow: auto;
+    height: calc(100vh - 80px);
+    padding: 20px;
+}
+
+
+/*Nav*/
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: calc(100vh - 80px);
+    padding: 10px 0;
+}
+
+.icon-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fa-circle-down {
+    margin-left: 5px;
+}
+
+#logo-small {
+    width: 30px;
+}
+
+.category-list {
+    margin-top: 100px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+/*Brani musicali*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.col {
+    border: 2px solid red;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    background-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+    height: 80px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/*-------------Media queries-------------*/
+
+@media screen and (min-width: 560px) {
+    .nav-bar {
+        width: 250px;
+        padding-right: 90px;
+    }
+
+    main {
+        margin-left: 250px;
+    }
+
+    .ds-none {
+        display: inline;
+        margin-left: 10px;
+    }
+
 }
