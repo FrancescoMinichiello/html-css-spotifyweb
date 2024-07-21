@@ -276,15 +276,15 @@ nav {
     opacity: 1;
 }
 
+.card.border-radius-50::before {
+    border-radius: 50%;
+}
+
 /*Footer*/
 
 footer {
     height: 100px;
     background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
