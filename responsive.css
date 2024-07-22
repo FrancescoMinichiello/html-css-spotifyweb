@@ -12,7 +12,6 @@
     .ft-right {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 686px) {
@@ -35,6 +34,10 @@
 
     .turn-sound {
         width: 20px;
+    }
+
+    .row {
+        justify-content: center;
     }
 }
 
