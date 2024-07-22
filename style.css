@@ -17,6 +17,7 @@ a {
 
 h1 {
     color: white;
+    padding: 0 20px;
 }
 
 
@@ -32,12 +33,14 @@ h3 {
 
 address {
     color: lightgray;
+    padding: 0 20px;
 }
 
 h2 {
     color: white;
     margin-top: 80px;
     font-size: 2rem;
+    padding: 0 20px;
 }
 
 a:hover {
@@ -87,11 +90,10 @@ a:hover {
     padding: 20px;
     background-color: rgba(128, 128, 128, 0.342);
     height: 80px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    margin-right: 16px;
     z-index: 1;
 }
 
@@ -120,10 +122,9 @@ main {
 }
 
 
-.container {
+.song-list {
     overflow: auto;
     height: calc(100vh - 100px);
-    padding: 20px;
 }
 
 
@@ -191,10 +192,6 @@ nav {
 
 /*Lista categorie*/
 
-.category-list {
-    margin-top: 100px;
-}
-
 .category {
     display: flex;
     justify-content: center;
@@ -202,6 +199,7 @@ nav {
     flex-wrap: wrap;
     text-transform: uppercase;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .active {
@@ -228,6 +226,7 @@ nav {
     flex-direction: row;
     gap: 10px;
     margin-top: 30px;
+    padding: 20px;
 }
 
 .card {
